@@ -16,3 +16,13 @@ Daniel
 2. Se crean las historias de usuario
 3. Se revisa documentos aportados
 4. Se sube la documentación al drive
+
+*** 29 DE OCTUBRE ***
+Daniel
+
+1. Reunión tutor Scrum
+2. Reunión entrega de mockups
+3. Entrega documentación adicional 
+4. Subida de documentación al drive
+5. Adelantar clase hora 9:25 am para la creacion del Dev
+6. Se hace la tercera reunión del Scrum (Reunión Scrum 3)
