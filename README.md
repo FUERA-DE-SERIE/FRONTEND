@@ -1,6 +1,6 @@
 # PROYECTO-CICLO4
 
-*** 26 DE OCTUBRE ***
+## 26 DE OCTUBRE 
 Daniel
 
 1. Se crea el repositorio
@@ -9,7 +9,7 @@ Daniel
 4. Se crea el drive
 5. Se hace la primera reunión del Scrum (Reunión Srcum 1)
 
-*** 27 DE OCTUBRE ***
+## 27 DE OCTUBRE 
 Daniel
 
 1. Se hace la segunda reunión del Scrum (Reunión Scrum 2)
@@ -17,7 +17,7 @@ Daniel
 3. Se revisa documentos aportados
 4. Se sube la documentación al drive
 
-*** 29 DE OCTUBRE ***
+## 29 DE OCTUBRE 
 Daniel
 
 1. Reunión tutor Scrum
@@ -27,7 +27,7 @@ Daniel
 5. Adelantar clase hora 9:25 am para la creacion del Dev
 6. Se hace la tercera reunión del Scrum (Reunión Scrum 3)
 
-*** 1 DE NOVIEMBRE ***
+## 1 DE NOVIEMBRE 
 Daniel
 
 1. Se hace la cuarta reunión del Scrum (Reunión Scrum 4)
@@ -35,7 +35,7 @@ Daniel
 3. Se valida archivo aportadopor Jimmy para la asignación de 
 4. Se determina las tareas actuales, cerradas y cuales están en fase de reajuste
 
-*** 03 DE NOVIEMBRE ***
+## 03 DE NOVIEMBRE 
 Daniel
 
 1. Se crea la rama dev para el front
