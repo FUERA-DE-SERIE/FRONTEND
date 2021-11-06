@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <h2 className="fontPrata">Tipo de letra fontPrata</h2>
+    <h2 className="fontYasevaOne">Tipo de letra fontYasevaOne</h2>
+    <p className="fontCalibri">Tipo de letra fontCalibri</p>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
