@@ -1,0 +1,31 @@
+.banner2{ 
+    height: 560px;
+    width: 390px;
+    margin-left: 60px;
+}
+
+.banner2-background{ 
+    background-color:#e4dccb;
+    height: 320px;
+    width: 320px;
+    position: relative;
+    top: 140px;
+    left: 70px;
+}
+
+.banner2-body{
+    position: relative;
+    top: -140px;
+    left: -70px;
+}
+
+.banner2-p{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #70756f;
+}
+
+.banner2-img{
+    height: 490px;
+}
