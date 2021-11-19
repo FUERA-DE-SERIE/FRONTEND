@@ -1,0 +1,77 @@
+.container {
+    background-color: #e4dccb;    
+    text-align: center;
+    padding: 50px;
+    padding-block-end: 100px;    
+}
+.container-Subscribe {
+    font-family: 'prata(marca)';
+    color:#39494f;
+    font-size: 30px;    
+}
+.container-Email {
+    display: inline-table; 
+    color: white; 
+    background-color: white;
+    border: 1px solid #888469;
+    padding: 16px 37px;
+    font-family: 'calibri light';
+    color:#888469;
+    font-size:15px;    
+    text-align: left;
+    width: 50%;    
+}
+.container-dos{
+    background-color: white;
+    text-align: center;    
+}
+.LinksRapidos{
+    display: inline-table;
+    font-family: 'calibri light';
+    color:#70756f;
+    text-align: left;
+    vertical-align: middle;
+    width: 20%;
+    padding: 1%; 
+      
+}
+.LinksRapidos-dos{
+    display: inline-table;
+    font-family: 'calibri light';
+    color:#70756f;
+    text-align: left;
+    vertical-align: middle;
+    width: 20%;
+    padding: 1%;  
+}
+.Title{
+    display: inline-table;
+    font-family: 'Yeseva Onev';
+    font-size: 30px;
+    text-align: center; 
+    vertical-align: middle;   
+    width: 40%;
+    padding: 1%;
+}
+.final{
+    display: inline-table;
+    font-family: 'calibri light';
+    color:#70756f;
+    text-align: left;
+    width: 47%;
+}
+.final-dos{
+    display: inline-table;
+    font-family: 'calibri light';
+    color:#70756f;
+    text-align: right;
+    width: 47%;
+}
+.h5{
+    color: #888469;
+    background-color: #888469;
+    text-align: left;    
+}
+.hr{
+    color: #888469;
+}
