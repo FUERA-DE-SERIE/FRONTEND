@@ -3,7 +3,6 @@ import CardImage from './components/Cards/CardImage';
 import Home from './components/pages/home/Home';
 import Footer from './sections/Footer';
 
-CardImage
 function App() {
   return (
     <div className="App">
