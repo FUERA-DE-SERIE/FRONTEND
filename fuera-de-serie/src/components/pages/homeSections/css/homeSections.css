@@ -1,0 +1,12 @@
+.section-hero{
+    display: flex;
+    background-color: #f7f6f5;
+}
+
+.section-reserva {
+    display: flex;
+}
+
+.section-articulo {
+    display: flex;
+}

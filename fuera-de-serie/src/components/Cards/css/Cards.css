@@ -2,10 +2,6 @@
     border:1px solid
 } */
 
-body{
-    background-color: #e4dccb;
-}
-
 .container{
     display: flex;
 }
@@ -15,7 +11,6 @@ body{
     margin: 1%;
     /* flex-direction: column; */
     /* border: 2px groove; */
-    background-color: #f7f6f5;
 }
 
 .card-right{
@@ -25,9 +20,14 @@ body{
     text-align: end;
 }
 
-h1, h4 {
+h1 {
     margin: 0px;
     padding: 0px;
+    color: #39494f;
+}
+
+h4 {
+    color: #888469;
 }
 
 .right-position {
@@ -37,7 +37,7 @@ h1, h4 {
 
 a{
     text-decoration: none;
-    color: black;
+    color: #39494f;
 }
 
 .col-7{
