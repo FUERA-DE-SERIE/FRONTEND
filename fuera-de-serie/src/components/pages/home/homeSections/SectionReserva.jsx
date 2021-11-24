@@ -1,6 +1,6 @@
-import '../homeSections/css/homeSections.css'
-import BannerSection from  '../../bannerSection/BannerSection'
-import CardLeft from '../../Cards/CardLeft';
+import './css/homeSections.css'
+import BannerSection from  '../../../bannerSection/BannerSection'
+import CardLeft from '../../../Cards/CardLeft';
 
 const SectionReserva = () => {
   return (

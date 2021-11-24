@@ -1,5 +1,5 @@
-import '../homeSections/css/homeSections.css'
-import CardLeft from '../../Cards/CardLeft';
+import './css/homeSections.css'
+import CardLeft from '../../../Cards/CardLeft';
 
 
 const SectionHero = () => {

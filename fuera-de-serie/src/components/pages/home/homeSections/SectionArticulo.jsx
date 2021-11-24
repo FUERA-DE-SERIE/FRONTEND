@@ -1,6 +1,6 @@
-import '../homeSections/css/homeSections.css'
-import BannerSection from  '../../bannerSection/BannerSection'
-import CardRight from '../../Cards/CardRight';
+import './css/homeSections.css'
+import BannerSection from  '../../../bannerSection/BannerSection'
+import CardRight from '../../../Cards/CardRight';
 
 const SectionArticulo = () => {
   return (

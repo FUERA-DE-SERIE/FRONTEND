@@ -1,4 +1,4 @@
-import Button1 from "../components/buttons/Button1"
+import Button1 from "../buttons/Button1"
 import './Footer.css'
 
 const Footer = () => {

@@ -1,4 +1,4 @@
-import '../homeSections/css/homeSections.css'
+import './css/homeSections.css'
 
 const SectionMiniTienda = () => {
   return (

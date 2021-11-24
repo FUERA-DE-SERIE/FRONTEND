@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from '../components/headerSection/Logo'
-import Menu from '../components/headerSection/Menu'
+import Logo from './headerSection/Logo'
+import Menu from './headerSection/Menu'
 import './header.css'
 
 const Header = () => {
