@@ -5,7 +5,7 @@ import CardLeft from '../../../Cards/CardLeft';
 const SectionReserva = () => {
   return (
     <div className='section-reserva'>  
-      <BannerSection NombreClase='banner2' imagen='Pizza-Plating.jpg'/>
+      <BannerSection NombreClase='banner' imagen='Pizza-Plating.jpg'/>
       <CardLeft/>
     </div>
   )

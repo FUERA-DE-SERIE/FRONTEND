@@ -6,7 +6,7 @@ const SectionArticulo = () => {
   return (
     <div className='section-articulo'>  
       <CardRight/>
-      <BannerSection NombreClase='banner' imagen='Pizza-Plating.jpg'/>
+      <BannerSection NombreClase='banner2' imagen='Pizza-Plating.jpg'/>
     </div>
   )
 }

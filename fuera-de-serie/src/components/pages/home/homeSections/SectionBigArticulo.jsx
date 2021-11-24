@@ -1,10 +1,12 @@
 import './css/homeSections.css'
-import CardRight from '../../../Cards/CardRight';
+import CardLeft from '../../../Cards/CardLeft';
+import CardImagePrincipal from '../../../Cards/CardImagePrincipal';
 
 const SectionBigArticulo = () => {
   return (
     <div className='section-big-articulo'>
-      <CardRight/>
+      <CardImagePrincipal direccion='izquierda' imagen='Pan-Mantequilla.jpg'/>
+      <CardLeft/>
     </div>
   )
 }

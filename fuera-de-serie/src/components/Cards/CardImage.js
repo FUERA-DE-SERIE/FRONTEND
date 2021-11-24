@@ -6,8 +6,8 @@ const CardImage = ({ img }) => {
                 <img src={img} alt="unload"/>
             </div>
             <div className="">
-                <h1 className="fontYasevaOne">Pasta a la Bolognese</h1>                
-                <h4 className="fontCalibri">$35,000 | 900 cal</h4>
+                <h2 className="fontPlayfair">Pasta a la Bolognese</h2>                
+                <p className="fontCalibri">$35,000 | 900 cal</p>
             </div>
         </div>
     )

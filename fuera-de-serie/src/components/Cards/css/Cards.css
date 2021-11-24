@@ -1,59 +1,52 @@
-/* *{
-    border:1px solid
-} */
-
-.container{
-    display: flex;
+.card {
+    max-width: 371px;
 }
 
-.card{
-    padding: 10px;
-    margin: 1%;
-    /* flex-direction: column; */
-    /* border: 2px groove; */
-}
-
-.card-right{
-    display: flex;
-    flex-direction: column;
-    /* align-items: end; */
+.card-right {
     text-align: end;
 }
 
-h1 {
-    margin: 0px;
-    padding: 0px;
+.texto {
     color: #39494f;
+    font-size: 16px !important;
+    margin-top: 20px;
 }
 
-h4 {
-    color: #888469;
+.boton {
+    text-align: right; 
 }
 
-.right-position {
-    display: flex-end; 
+/* CSS CardImagePrincipal */
+.derecha {
+    display: flex;
+    margin-left: 200px;
+    position: relative;
+    top: 80px;
+    left: 40px;
 }
 
-a{
-    text-decoration: none;
-    color: #39494f;
+.derecha-p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    margin-left: 5px;
 }
 
-.col-7{
-    /* display: flex; */
-    width: 58.33333333%;
-    align-self: flex-end;
-    /* align-items: flex-end; */
-    /* align-content: flex-end; */
-    /* text-align: flex-end; */
-}
-.col-8{
-    width: 66.66666667%;
+.derecha-img {
+    height: 630px;
 }
 
+.izquierda {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 100px;
+}
 
-/* div.lema > h1 {   
-    justify-content: center;
-} */
+.izquierda-p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    margin-right: 5px;
+}
 
-/* https://uniwebsidad.com/libros/css/capitulo-4/bordes */
+.izquierda-img {
+    height: 630px;
+}

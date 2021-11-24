@@ -3,7 +3,7 @@ import './css/homeSections.css'
 const SectionMiniTienda = () => {
   return (
     <div className='section-mini-tienda'>
-      <h2>Nuestros Mejores Vendidos</h2>
+      <h2 className='fontPlayfair'>Nuestros Mejores Vendidos</h2>
     </div>
   )
 }

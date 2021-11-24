@@ -1,7 +1,7 @@
 .banner{ 
     height: 560px;
     width: 390px;
-    margin-right: 60px;
+    margin-right: 100px;
 }
 
 .banner-background{ 
@@ -19,11 +19,7 @@
 }
 
 .banner-p{
-    margin: 0;
     writing-mode: vertical-rl;
-    margin-right: 5px;
-    font-size: 13px;
-    color: #70756f;
 }
 
 .banner-img{
@@ -33,7 +29,7 @@
 .banner2{ 
     height: 560px;
     width: 390px;
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .banner2-background{ 
@@ -49,13 +45,6 @@
     position: relative;
     top: -140px;
     left: -70px;
-}
-
-.banner2-p{
-    margin: 0;
-    margin-bottom: 5px;
-    font-size: 13px;
-    color: #70756f;
 }
 
 .banner2-img{
