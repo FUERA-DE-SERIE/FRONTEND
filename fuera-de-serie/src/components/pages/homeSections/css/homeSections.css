@@ -10,3 +10,12 @@
 .section-articulo {
     display: flex;
 }
+
+.section-mini-tienda{
+    display: flex;
+    background-color: #f7f6f5;
+}
+
+.section-big-articuloa{
+    display: flex;
+}
