@@ -1,12 +1,12 @@
 import '../homeSections/css/homeSections.css'
-import BannerSection2 from  '../../bannerSection/BannerSection2'
+import BannerSection from  '../../bannerSection/BannerSection'
 import CardRight from '../../Cards/CardRight';
 
 const SectionArticulo = () => {
   return (
     <div className='section-articulo'>  
       <CardRight/>
-      <BannerSection2/>
+      <BannerSection NombreClase='banner' imagen='Pizza-Plating.jpg'/>
     </div>
   )
 }

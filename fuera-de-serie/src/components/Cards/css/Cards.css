@@ -31,8 +31,7 @@ h4 {
 }
 
 .right-position {
-    display: flex; 
-    justify-content: end;
+    display: flex-end; 
 }
 
 a{

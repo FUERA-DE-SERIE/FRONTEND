@@ -3,7 +3,7 @@ const CardImage = ({ img }) => {
     return (
         <div>
             <div>
-                <img src={img} alt="image unload" />
+                <img src={img} alt="unload"/>
             </div>
             <div className="">
                 <h1 className="fontYasevaOne">Pasta a la Bolognese</h1>                
