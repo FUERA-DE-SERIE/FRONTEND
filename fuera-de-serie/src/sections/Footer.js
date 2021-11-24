@@ -4,9 +4,9 @@ import './Footer.css'
 const Footer = () => {
     return (
         <>
-            <footer class="section-footer">
-                <section class="container">
-                    <div class="container-Subscribe">
+            <footer className="section-footer">
+                <section className="container">
+                    <div className="container-Subscribe">
                         <h1>Suscribete a Nuestra Newsletter</h1>
                     </div>
                     <input 
@@ -16,27 +16,27 @@ const Footer = () => {
                     </input>
                     <Button1 buttonName='Suscribirse'/>     
                 </section>
-                <div class="container-dos">
-                    <div class="LinksRapidos">
+                <div className="container-dos">
+                    <div className="LinksRapidos">
                         <h2>LINKS RAPIDOS</h2>
                         <h3>Fuera de Serie 2021</h3>
                         <h3>Fuera de Serie 2021</h3>
                     </div>
-                    <div class="LinksRapidos-dos">
+                    <div className="LinksRapidos-dos">
                         <h2>LINKS RAPIDOS</h2>
                         <h3>Fuera de Serie 2021</h3>
                         <h3>Fuera de Serie 2021</h3>
                     </div>            
-                    <div class="Title">
+                    <div className="Title">
                         <h4>MARTINY</h4>
                     </div>
                     <div>
                         <hr/>
                     </div>
-                    <div class="final">
+                    <div className="final">
                         <h3>Link repositorio en GitHub Fuera de Serie</h3>
                     </div>
-                    <div class="final-dos">
+                    <div className="final-dos">
                         <h3>Fuera de Serie 2021</h3>
                     </div> 
                 </div>
