@@ -4,7 +4,7 @@ import SectionArticulo from './homeSections/SectionArticulo';
 import SectionMiniTienda from './homeSections/SectionMiniTienda';
 import SectionBigArticulo from './homeSections/SectionBigArticulo';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
       <SectionHero/>
@@ -16,4 +16,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

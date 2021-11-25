@@ -1,16 +1,10 @@
 // import './App.css';
-import CardImage from './components/Cards/CardImage';
-import Home from './components/pages/home/Home';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
+import AppRouter from "./routers/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <CardImage/>
-      <Home/>
-      <Footer/>       
+      <AppRouter/>
     </div>
   );
 }

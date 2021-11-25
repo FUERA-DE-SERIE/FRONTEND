@@ -4,15 +4,17 @@ import Menu from './headerSection/Menu'
 import './header.css'
 
 const Header = () => {
-    const menu1 = ["Home", "Nosotros", "Reservaciones" ]
-    const menu2 = ["Menú", "Carrito", "Login" ]
-    return (
-        <header className="header">
-          <Menu nombreslinks={menu1}/> 
-          <Logo/>
-          <Menu nombreslinks={menu2}/>
-        </header>
-    )
+  const menu1 = ["Home", "Nosotros"]
+  const menu2 = ["Store", "Login" ]
+  return (
+    <header className="header">
+      <div className="header-wrapper">
+        <Menu nombreslinks={menu1}/> 
+        <Logo/>
+        <Menu nombreslinks={menu2}/>
+      </div>  
+    </header>
+  )
 }
 
 export default Header
