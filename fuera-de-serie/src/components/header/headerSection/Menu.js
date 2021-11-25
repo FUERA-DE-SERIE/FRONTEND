@@ -6,9 +6,8 @@ const Menu = ({ nombreslinks }) => {
     return (
         <ul className = "menu">
             {nombreslinks.map((nombrelink) => (
-                <LinkMenu nombrelink={nombrelink} />
+                <LinkMenu nombrelink={ nombrelink } />
             ))}
-
         </ul>
     )
 }
