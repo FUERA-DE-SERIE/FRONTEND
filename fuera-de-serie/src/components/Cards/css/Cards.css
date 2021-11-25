@@ -1,0 +1,52 @@
+.card {
+    max-width: 371px;
+}
+
+.card-right {
+    text-align: end;
+}
+
+.texto {
+    color: #39494f;
+    font-size: 16px !important;
+    margin-top: 20px;
+}
+
+.boton {
+    text-align: right; 
+}
+
+/* CSS CardImagePrincipal */
+.derecha {
+    display: flex;
+    margin-left: 200px;
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+
+.derecha-p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    margin-left: 5px;
+}
+
+.derecha-img {
+    height: 630px;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 100px;
+}
+
+.izquierda-p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    margin-right: 5px;
+}
+
+.izquierda-img {
+    height: 630px;
+}

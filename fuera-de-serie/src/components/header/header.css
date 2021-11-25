@@ -1,0 +1,33 @@
+.header{
+    background-color: #f3f0ea;
+}
+
+.header-wrapper{
+    display:flex;
+    max-width: 1360px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+}
+
+.menu{
+    display : flex;
+    justify-content: space-between;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: #39494f;
+    justify-content: space-between;
+}
+
+.nombre-tienda {
+    text-decoration: none;
+    font-family: 'Yeseva Onev';
+    font-size: 38px;
+    color: #39494f;
+}
+
+.nombre-tienda:visited {
+    text-decoration: none;
+}

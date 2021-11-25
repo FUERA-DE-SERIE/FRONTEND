@@ -1,13 +1,10 @@
-import './App.css';
-import Footer from './sections/Footer';
-import Header from './sections/Header';
-
+// import './App.css';
+import AppRouter from "./routers/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Footer/>
+      <AppRouter/>
     </div>
   );
 }
