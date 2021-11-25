@@ -1,0 +1,34 @@
+.section-hero{
+    display: flex;
+    background-color: #f7f6f5;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.section-reserva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.section-articulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.section-mini-tienda{
+    display: flex;
+    background-color: #f7f6f5;
+}
+
+.section-big-articulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

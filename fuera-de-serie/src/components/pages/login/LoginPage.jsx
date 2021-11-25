@@ -1,8 +1,8 @@
-import './cuadro1.css';
+import React from 'react'
+import './loginPage.css'
 
-
-const Cuadro1=(props)=>{
-  return(
+const LoginPage = () => {
+  return (
     <div className="user-card">
       < div className="user-nombre">
       <h1 class="fontPrata">NOMBRE</h1>
@@ -21,9 +21,8 @@ const Cuadro1=(props)=>{
           <h2 class="fontCalibri">Olvidaste tu contraseña? <a class="font-negra-color" href="" target="" rel="">.    Recuperar </a></h2>          
         </div>
       </div>
-      
     </div>
   )
 }
 
-export default Cuadro1;
+export default LoginPage

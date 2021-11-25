@@ -5,7 +5,7 @@ const Button1 = ( { buttonName, type } ) => {
 
   return (
     <>
-      <button className="button1" type={ type }> { buttonName } </button>
+      <button className="button1 fontCalibri" type={ type }> { buttonName } </button>
     </>
   )
 }

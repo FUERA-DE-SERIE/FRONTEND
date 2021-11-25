@@ -1,11 +1,23 @@
-.fontPrata {
-    font-family: 'Prata', serif;
-    /* font-size: 35px; */
+.fontPlayfair-h1 {
+    font-size: 240%;
 }
+
+.fontPlayfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 240%;
+    margin: 0px;
+    padding: 0px;
+    color: #39494f;
+}
+
 .fontYasevaOne {
     font-family: 'Yeseva One', cursive;
 }
 
 .fontCalibri {
-    font-family: Calibri, sans-serif;
+    font-family: 'Calibri light', sans-serif;
+    font-size: 15px;
+    color: #70756f;
+    margin: 0px;
 }

@@ -1,15 +1,10 @@
-import './App.css';
-import Footer from './sections/Footer';
-import Cuadro1 from './components/may/cuadro1';
+// import './App.css';
+import AppRouter from "./routers/AppRouter";
 
 function App() {
   return (
     <div className="App">
-
-      <Cuadro1/>
-      
-      <Footer/>
-  
+      <AppRouter/>
     </div>
   );
 }
