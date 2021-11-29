@@ -1,34 +1,40 @@
-.section-hero{
+/* CSS Sections*/
+.section {
     display: flex;
-    background-color: #f7f6f5;
     align-items: center;
     justify-content: center;
+}
+
+.col {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS Section Hero */
+.section-hero{
+    background-color: #f7f6f5;
     margin-bottom: 150px;
 }
 
+/* CSS Section Hero */
 .section-reserva {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 100px;
 }
 
+/* CSS Section Hero */
 .section-articulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 150px;
 }
 
+/* CSS Section Hero */
 .section-mini-tienda{
-    display: flex;
     background-color: #f7f6f5;
 }
 
+/* CSS Section Hero */
 .section-big-articulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
 }
+

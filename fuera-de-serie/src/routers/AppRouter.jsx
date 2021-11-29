@@ -7,6 +7,7 @@ import LoginPage from '../components/pages/login/LoginPage';
 import NosotrosPage from '../components/pages/nosotros/NosotrosPage';
 import StorePage from '../components/pages/store/StorePage';
 import Footer from '../components/footer/Footer';
+// import LoginRouter from './LoginRouter';
 
 const AppRouter = () => {
   return (
@@ -15,9 +16,9 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
         <Route path="/nosotros" element={<NosotrosPage />} />
         <Route path="/store" element={<StorePage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

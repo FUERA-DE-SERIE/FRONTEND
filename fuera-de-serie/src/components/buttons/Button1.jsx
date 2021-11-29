@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import './button1.css'
+import './buttons.css'
 
 const Button1 = ( { buttonName, type } ) => {
 

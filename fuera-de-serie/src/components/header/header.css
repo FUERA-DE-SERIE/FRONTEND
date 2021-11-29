@@ -8,26 +8,23 @@
     justify-content: space-between;
     align-items: center;
     min-height: 90px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.menu{
-    display : flex;
+.wrapper {
+    display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .link-menu {
-    text-decoration: none;
-    color: #39494f;
+    color: #39494f !important;
     justify-content: space-between;
 }
 
 .nombre-tienda {
-    text-decoration: none;
     font-family: 'Yeseva Onev';
-    font-size: 38px;
+    font-size: 36px;
     color: #39494f;
-}
-
-.nombre-tienda:visited {
-    text-decoration: none;
 }

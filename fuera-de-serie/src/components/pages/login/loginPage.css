@@ -1,11 +1,4 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+
   
   .fontPrata {
     font-family: 'Prata', serif;
@@ -56,22 +49,15 @@ body {
   }
   
   .container{
-    display: flex;
+    display: flex-end;
   }
   
-  .card{
-    padding: 10px;
-    margin: 1%;
-    /* flex-direction: column; */
-    /* border: 2px groove; */
-    background-color: #f7f6f5;
-  }
   
   .card-right{
-    display: flex;
+    display: flex-end;
     flex-direction: column;
     /* align-items: end; */
-    text-align: end;
+    text-align: flex-end;
   }
   
   h1, h4 {
@@ -80,8 +66,8 @@ body {
   }
   
   .right-position {
-    display: flex; 
-    justify-content: end;
+    display: flex-end; 
+    justify-content: flex-end;
   }
   
   a{

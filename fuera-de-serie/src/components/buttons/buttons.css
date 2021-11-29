@@ -1,3 +1,19 @@
+/* CSS for Button1 */
+.button1 {
+    color: #ffffff;
+    background-color: #888469;
+    border: 1px solid #888469;
+    padding: 16px 37px;
+    font-family: 'Calibri Light';
+    font-size: 15px;
+}
+
+.button1:hover {
+    background-color: #ffffff;
+    color: #888469;
+}
+
+/* CSS for Button2 */
 .button2 {
     color: #888469;
     background-color: transparent;

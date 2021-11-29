@@ -1,6 +1,6 @@
-import './bannerSection.css'
+import './banner.css'
 
-const BannerSection = ({ NombreClase, imagen }) => {
+const Banners = ({ NombreClase, imagen }) => {
   return (
     <div className={NombreClase}>
       <div className={`${NombreClase}-background`}>
@@ -13,4 +13,4 @@ const BannerSection = ({ NombreClase, imagen }) => {
   )
 }
 
-export default BannerSection
+export default Banners
