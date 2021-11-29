@@ -11,6 +11,18 @@
     justify-content: center;
 }
 
+.col-iz {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+.col-dr {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
 /* CSS Section Hero */
 .section-hero{
     background-color: #f7f6f5;

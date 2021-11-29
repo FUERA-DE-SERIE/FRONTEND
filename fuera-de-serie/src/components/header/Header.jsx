@@ -5,8 +5,8 @@ import './header.css'
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-wrapper">
-        <div className="wrapper">
+      <nav className="header-wrapper">
+        <div className="link-wrapper">
           <NavLink 
             className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
             to="/home"
@@ -22,17 +22,17 @@ const Header = () => {
             to="/"
             >EVER</Link>
         </div>
-        <div className="wrapper">
-        <NavLink 
-          className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
-          to="/store"
-        >MENU</NavLink>
-        <NavLink 
-          className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
-          to="/login"
-        >LOGIN</NavLink>
+        <div className="link-wrapper">
+          <NavLink 
+            className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
+            to="/store"
+          >MENU</NavLink>
+          <NavLink 
+            className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
+            to="/login"
+          >LOGIN</NavLink>
         </div>
-      </div>  
+      </nav>  
     </header>
   )
 }
