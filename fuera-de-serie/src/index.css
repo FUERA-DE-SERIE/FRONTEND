@@ -1,3 +1,32 @@
 body {
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* CSS Sections*/
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-iz {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+.col-dr {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}

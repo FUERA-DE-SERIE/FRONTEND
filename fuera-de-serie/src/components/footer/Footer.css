@@ -1,64 +1,38 @@
-.container {
-    background-color: #e4dccb;    
+.container {   
     text-align: center;
-    padding: 70px;
-    min-height: 150px;  
+    padding: 80px;  
+}
+
+.container-1 {
+    background-color: #e4dccb;    
+}
+
+.section-footer {
+    padding-bottom: 60px;
 }
 
 .form-email {
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .input-form { 
     border: 0px solid;
     padding: 17px 37px;
     width: 40%;
-    margin-right: 15px; 
+    margin-right: 15px !important;
+    outline: none; 
 }
 
-.container-dos{
-    background-color: white;
-    text-align: center;    
+.links-list {
+    list-style: none;
+    text-align: start;
 }
 
-.LinksRapidos{
-    display: inline-table;
-    font-family: 'calibri light';
-    color:#70756f;
-    text-align: left;
-    vertical-align: middle;
-    width: 20%;
-    padding: 1%;    
+.links-title {
+    margin-bottom: 15px !important;
 }
 
-.LinksRapidos-dos{
-    display: inline-table;
-    font-family: 'calibri light';
-    color:#70756f;
-    text-align: left;
-    vertical-align: middle;
-    width: 20%;
-    padding: 1%;  
-}
-
-.final{
-    display: inline-table;
-    font-family: 'calibri light';
-    color:#70756f;
-    text-align: left;
-    width: 47%;
-}
-
-.final-dos{
-    display: inline-table;
-    font-family: 'calibri light';
-    color:#70756f;
-    text-align: right;
-    width: 47%;
-}
-
-.nombre-tienda {
-    font-family: 'Yeseva Onev';
-    font-size: 30px;
-    color: #39494f;
+.link-item {
+    padding-top: 10px;
 }

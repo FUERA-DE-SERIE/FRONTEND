@@ -44,10 +44,6 @@
     text-align: end;
 }
 
-.title {
-    font-size: 300% !important;
-}
-
 .texto {
     color: #39494f;
     font-size: 16px !important;
@@ -59,6 +55,10 @@
 }
 
 /* CSS CardImage */
+
+.card-image {
+    margin: 1%;
+}
 
 .small-img {
     height: 305px;
@@ -72,8 +72,11 @@
     height: 370px;
 }
 
+.medium-body {
+    text-align: center;
+}
+
 .large-img{
     height: 405px;
 }
-
 

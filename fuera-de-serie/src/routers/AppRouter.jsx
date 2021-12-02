@@ -1,26 +1,36 @@
 import React from 'react'
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import Header from '../components/header/Header';
-import HomePage from '../components/pages/home/HomePage';
 import LoginPage from '../components/pages/login/LoginPage';
-import NosotrosPage from '../components/pages/nosotros/NosotrosPage';
-import StorePage from '../components/pages/store/StorePage';
-import Footer from '../components/footer/Footer';
-// import LoginRouter from './LoginRouter';
+import DashboardPage from '../components/pages/dashboard/DashboardPage';
+import FrontendRouter from './FrontendRouter';
+import PrivateRouter from './PrivateRouter';
+import PublicRouter from './PublicRouter';
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <Header/>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/nosotros" element={<NosotrosPage />} />
-        <Route path="/store" element={<StorePage />} />
-        <Route path="/login" element={<LoginPage />} />
-      </Routes>
-      <Footer/>
+
+        <Route path="/login" element={
+          <PublicRouter>
+            <LoginPage /> 
+          </PublicRouter>
+        } />
+
+        <Route path="/admin" element={
+          <PrivateRouter>
+            <DashboardPage />
+          </PrivateRouter>
+        } />
+
+        <Route path="/*" element={
+          <PublicRouter>
+            <FrontendRouter />
+          </PublicRouter>
+        } />
+
+      </Routes> 
     </BrowserRouter>
   )
 }

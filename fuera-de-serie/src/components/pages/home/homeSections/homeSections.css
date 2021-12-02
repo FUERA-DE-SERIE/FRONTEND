@@ -1,51 +1,36 @@
-/* CSS Sections*/
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.col {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.col-iz {
-    width: 50%;
-    display: flex;
-    justify-content: left;
-}
-
-.col-dr {
-    width: 50%;
-    display: flex;
-    justify-content: right;
-}
-
 /* CSS Section Hero */
-.section-hero{
+.section-hero {
     background-color: #f7f6f5;
     margin-bottom: 150px;
 }
 
-/* CSS Section Hero */
+/* CSS Section reserva */
 .section-reserva {
     margin-bottom: 100px;
 }
 
-/* CSS Section Hero */
+/* CSS Section articulo */
 .section-articulo {
     margin-bottom: 150px;
 }
 
-/* CSS Section Hero */
-.section-mini-tienda{
+/* CSS Section mini-tienda */
+.section-mini-tienda {
     background-color: #f7f6f5;
+    padding-top: 50px;
+    padding-bottom: 110px;
 }
 
-/* CSS Section Hero */
-.section-big-articulo{
+.mini-tienda-title {
+    text-align: center;
+}
+
+.section-list { 
+    margin-top: 50px;
+}
+
+/* CSS Section big-articulo */
+.section-big-articulo {
     margin-top: 100px;
     margin-bottom: 100px;
 }

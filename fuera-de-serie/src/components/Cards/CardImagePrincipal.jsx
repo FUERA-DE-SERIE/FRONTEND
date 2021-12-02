@@ -1,4 +1,4 @@
-import './css/Cards.css'
+import './cards.css'
 
 const CardImagePrincipal = ({ direccion, imagen }) => {
   return (

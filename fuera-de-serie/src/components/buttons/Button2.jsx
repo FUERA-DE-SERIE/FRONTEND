@@ -2,11 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './buttons.css'
 
-const Button2 = ( { buttonName } ) => {
+const Button2 = ( { buttonName, onClick } ) => {
 
   return (
     <>
-      <button className="button2 fontCalibri">  
+      <button 
+        className="button2 fontCalibri"
+        onClick={ onClick }
+      >  
           { buttonName }
           <i className="icon"></i>
       </button>

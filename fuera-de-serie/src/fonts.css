@@ -1,5 +1,10 @@
 .fontPlayfair-h1 {
-    font-size: 240%;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 300%;
+    margin: 0px;
+    padding: 0px;
+    color: #39494f;
 }
 
 .fontPlayfair {
@@ -11,13 +16,31 @@
     color: #39494f;
 }
 
+.fontPlayfair-h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 160%;
+    margin: 0px;
+    padding: 0px;
+    color: #39494f;
+}
+
 .fontYasevaOne {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva Onev';
+    font-size: 36px;
+    color: #39494f;
 }
 
 .fontCalibri {
     font-family: 'Calibri light', sans-serif;
     font-size: 15px;
     color: #70756f;
+    margin: 0px;
+}
+
+.fontCalibri-2 {
+    font-family: 'Calibri light', sans-serif;
+    font-size: 15px;
+    color: #39494f;
     margin: 0px;
 }

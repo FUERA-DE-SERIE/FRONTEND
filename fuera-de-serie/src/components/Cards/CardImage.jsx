@@ -1,17 +1,17 @@
+import './cards.css'
 
-const CardImage = ({ size, imagen, title, value }) => {
+const CardImage = ({ size, id, dish, price, calories }) => {
   return (
-    <div>
+    <div className="card-image">
       <div>
-        <img className={`${ size }-img`} src={`/assets/${imagen}`} alt={ imagen }/>
+        <img className={`${ size }-img`} src={`/assets/${id}.jpg`} alt={ id }/>
       </div>
       <div className={`${ size }-body`}>
-        <h3 className="fontPlayfair">{ title }</h3>                
-        <p className="fontCalibri">{ value }</p>
+        <h3 className="fontPlayfair-h3">{ dish }</h3>                
+        <p className="fontCalibri">{ `${price} | ${calories}`}</p>
       </div>
     </div>
   )
 }
-
 
 export default CardImage

@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types'
 import './buttons.css'
 
-const Button1 = ( { buttonName, type } ) => {
+const Button1 = ( { buttonName, type, onClick } ) => {
 
   return (
     <>
-      <button className="button1 fontCalibri" type={ type }> { buttonName } </button>
+      <button 
+      className="button1 fontCalibri" 
+      type={ type }
+      onClick={ onClick }
+      > { buttonName } </button>
     </>
   )
 }

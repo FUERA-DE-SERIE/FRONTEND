@@ -4,49 +4,57 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="section-footer">
+    <footer>
 
-      <div className="container">
-        <h2 className='fontPlayfair'>Suscribete a Nuestra Newsletter</h2>
-        <div className="form-email">
-          <form action="">
+      <div className="container container-1">
+        <h2 className='fontPlayfair'>Suscribete a Nuestra Newsletter</h2>    
+          <form className='form-email' action="">
             <input 
               type="email" 
               placeholder="Ingresa tu correo electronico"
-              class="input-form fontCalibri"> 
+              className="fontCalibri-2 input-form"> 
             </input>
-            <Button1 className='button' buttonName='Suscribirse' type='submit'/>     
+            <Button1 buttonName='Suscribirse' type='submit'/>     
           </form>
-        </div>
       </div>
 
-      <div className="">
-        <div className="section">
-          <div className="LinksRapidos">
-            <h3>LINKS RAPIDOS</h3>
-            <NavLink 
-              className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
-              to="/home"
-            >HOME</NavLink>
-            <NavLink 
-              className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
-              to="/nosotros"
-            >NOSOTROS</NavLink>
+      <div className="container">
+        <div className="section section-footer">
+          <div className="col">
+            <ul className="links-list">
+              <h3 className="fontCalibri-2 links-title">LINKS RAPIDOS</h3>
+              <li className="link-item">
+                <NavLink 
+                  className='fontCalibri-2' 
+                  to="/home"
+                  >HOME</NavLink>
+              </li>
+              <li className="link-item">
+                <NavLink 
+                  className='fontCalibri-2' 
+                  to="/nosotros"
+                >NOSOTROS</NavLink>
+              </li>
+            </ul>
+            <ul className="links-list">
+              <h3 className="fontCalibri-2 links-title">LINKS RAPIDOS</h3>
+              <li className="link-item">
+                <NavLink 
+                  className='fontCalibri-2' 
+                  to="/store"
+                  >MENU</NavLink>
+              </li>
+              <li className="link-item">
+                <NavLink 
+                  className='fontCalibri-2' 
+                  to="/login"
+                >LOGIN</NavLink>
+              </li>
+            </ul>            
           </div>
-          <div className="LinksRapidos-dos">
-            <h3>LINKS RAPIDOS</h3>
-            <NavLink 
-              className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
-              to="/store"
-            >MENU</NavLink>
-            <NavLink 
-              className={ ({ isActive }) => 'link-menu fontCalibri ' + (isActive ? 'active' : '')} 
-              to="/login"
-            >LOGIN</NavLink>
-          </div>            
-          <div>
+          <div className="col">
             <Link 
-              className="nombre-tienda" 
+              className="fontYasevaOne" 
               to="/"
               >EVER</Link>
           </div>
@@ -55,8 +63,17 @@ const Footer = () => {
         <hr/>
 
         <div className="section">
-          <p className="col">Link repositorio en GitHub Fuera de Serie</p>
-          <p className="col">Fuera de Serie 2021</p>
+          <p className="col-iz fontCalibri-2">
+            <a 
+              className="fontCalibri-2" 
+              href="https://github.com/FUERA-DE-SERIE" 
+              target="_blank" 
+              rel="noreferrer"
+            >Repositorio en GitHub Fuera de Serie Equipo 8</a>
+          </p>
+          <p className="col-dr fontCalibri-2">
+            Desarrollado por Fuera de Serie 2021 &copy;
+          </p>
         </div> 
       </div>
 
