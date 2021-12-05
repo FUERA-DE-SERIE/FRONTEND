@@ -34,7 +34,7 @@ const Header = () => {
           { user.logged 
             ? <NavLink 
                 className={ ({ isActive }) => 'fontCalibri-2 ' + (isActive ? 'active' : '')} 
-                to="/admin"
+                to="/admin/dashboard"
               >{ user.name }</NavLink> 
             : <NavLink 
                 className={ ({ isActive }) => 'fontCalibri-2 ' + (isActive ? 'active' : '')} 

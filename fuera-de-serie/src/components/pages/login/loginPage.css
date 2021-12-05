@@ -1,3 +1,60 @@
+/* CSS Login Section */
+.brand-name {
+  padding: 5% ;
+}
+
 .login-section{
-  background-color:#f7f6f5;  
+  background-color:#f7f6f5;
+  min-height: 625px;  
+}
+
+.login {
+  padding: 12%;
+}
+
+.crear-cuenta {
+  font-weight: bold;
+  margin-left: 5px !important;
+}
+
+.input-form-login {
+  border: 0px solid;
+  padding: 17px 30px;
+  width: 60%;
+  margin-bottom: 15px !important;
+  outline: none; 
+}
+
+.input-form-login:focus {
+  outline: 0.5px solid;
+  outline-color: #70756f; 
+}
+
+.olvido-cuenta {
+  font-weight: bold;
+}
+
+/* CSS Video Section */
+.video-section{
+  background-color:#e4dccb;
+  min-height: 625px;
+  text-align: center;
+}
+
+.video-section-body {
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 17%;
+  text-align: center;
+}
+
+.video {
+  border:none;
+  width: 572px; 
+  height: 320px;
+  box-shadow: #70756f;
+}
+
+.video-section-text {
+  text-align: left;
 }

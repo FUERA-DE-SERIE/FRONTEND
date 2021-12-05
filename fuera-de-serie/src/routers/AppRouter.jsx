@@ -2,12 +2,13 @@ import React from 'react'
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from '../components/pages/login/LoginPage';
-import DashboardPage from '../components/pages/dashboard/DashboardPage';
+import DashBoardRouter from './DashboardRouter';
 import FrontendRouter from './FrontendRouter';
 import PrivateRouter from './PrivateRouter';
 import PublicRouter from './PublicRouter';
 
 const AppRouter = () => {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -18,9 +19,9 @@ const AppRouter = () => {
           </PublicRouter>
         } />
 
-        <Route path="/admin" element={
+        <Route path="/admin/*" element={
           <PrivateRouter>
-            <DashboardPage />
+            <DashBoardRouter/>
           </PrivateRouter>
         } />
 

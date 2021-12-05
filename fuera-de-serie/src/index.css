@@ -13,6 +13,10 @@ a {
     justify-content: center;
 }
 
+.section-up {
+    display: flex;
+}
+
 .col {
     width: 50%;
     display: flex;
@@ -29,4 +33,33 @@ a {
     width: 50%;
     display: flex;
     justify-content: right;
+}
+
+
+.col-2 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-4 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-6 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-8 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
 }

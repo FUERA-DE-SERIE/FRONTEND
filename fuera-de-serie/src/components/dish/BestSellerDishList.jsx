@@ -1,41 +1,21 @@
-import React from 'react'
+import React, { useMemo } from 'react'
+import { GetBestSellers } from '../../selectors/getBestSellers'
+// import { AuthContext } from '../../auth/authContext'
 import CardImage from '../Cards/CardImage'
+
+
 
 const BestSellerDishList = () => {
 
-  const bestSellers = [
-    {
-      'id': 'Avena',
-      'dish':'Pasta Bolognese', 
-      'price':'$35,000', 
-      'calories':'900 cal',
-    },
-    {
-      'id': 'Avena',
-      'dish':'Pasta Bolognese', 
-      'price':'$35,000', 
-      'calories':'900 cal',
-    },
-    {
-      'id': 'Avena',
-      'dish':'Pasta Bolognese', 
-      'price':'$35,000', 
-      'calories':'900 cal',
-    },
-    {
-      'id': 'Avena',
-      'dish':'Pasta Bolognese', 
-      'price':'$35,000', 
-      'calories':'900 cal',
-    },
-  ]
-
+  // const { dishes } = useContext( AuthContext )
+  const dishes = useMemo(() => GetBestSellers(), []);
+  
   return (
     <>
       {
-        bestSellers.map((dish) => {
+        dishes.map((dish) => {
           return (
-            <CardImage size='medium' key={ dish.id }  { ...dish }></CardImage>
+            <CardImage size='medium' key={ dish._id }  { ...dish }></CardImage>
           )
         })
       }

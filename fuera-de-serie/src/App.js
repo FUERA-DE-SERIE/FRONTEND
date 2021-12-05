@@ -1,6 +1,7 @@
-import React, { useEffect, useReducer } from 'react'
+import React, { useState, useEffect, useReducer } from 'react'
 import { AuthContext } from './auth/authContext'
 import { authReducer } from './auth/authReducer'
+import axios from 'axios';
 import AppRouter from "./routers/AppRouter";
 
 
@@ -21,11 +22,33 @@ function App() {
     localStorage.setItem('user', JSON.stringify(user))
   }, [user])
 
+  const [dishes, setDishes] = useState([])
+
+  useEffect(() => {
+    listTasks()
+  }, [])
+
+  //List Task
+  const listTasks = () => {
+    axios
+      .get("http://localhost:5000/api/dish/list")
+      .then((res) => {
+        const data = res.data;
+        setDishes(data)
+        return data;
+      })
+      .catch((err) => {
+        console.log(err);
+        return err;
+    });
+  }
+
   return (
     <AuthContext.Provider value={
       {
         user,
-        dispatch
+        dispatch,
+        dishes
       }
     }>
       <AppRouter/>

@@ -18,10 +18,15 @@
 
 .input-form { 
     border: 0px solid;
-    padding: 17px 37px;
+    padding: 17px 30px;
     width: 40%;
     margin-right: 15px !important;
     outline: none; 
+}
+
+.input-form:focus {
+    outline: 0.5px solid;
+    outline-color: #70756f; 
 }
 
 .links-list {
