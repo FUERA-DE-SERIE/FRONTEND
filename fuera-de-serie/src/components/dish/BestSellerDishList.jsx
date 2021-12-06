@@ -1,19 +1,13 @@
-import React, { useMemo } from 'react'
-import { GetBestSellers } from '../../selectors/getBestSellers'
-// import { AuthContext } from '../../auth/authContext'
+import React from 'react'
 import CardImage from '../Cards/CardImage'
-
-
+import {mejoresVendidos} from '../../data/mejoresVendidos'
 
 const BestSellerDishList = () => {
-
-  // const { dishes } = useContext( AuthContext )
-  const dishes = useMemo(() => GetBestSellers(), []);
   
   return (
     <>
       {
-        dishes.map((dish) => {
+        mejoresVendidos.map((dish) => {
           return (
             <CardImage size='medium' key={ dish._id }  { ...dish }></CardImage>
           )
