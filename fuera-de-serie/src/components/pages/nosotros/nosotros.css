@@ -1,0 +1,59 @@
+.margenes{
+    padding: 100px 100px 100px 200px;
+}
+
+.margenCard{
+    margin-bottom: 40px !important;
+    padding-right: 40px;
+}
+
+.margenImg{
+    padding-left: 7px;
+    /* background-color: red; */
+}
+
+.margenText{
+    padding-left: 50px;
+    padding-right: 250px;
+}
+
+.colorSection2{
+    background-color: #f3f0ea;
+}
+
+.columna{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    text-align: left;
+    padding: 2%;
+}
+
+.columnaImg{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+.fontPlayfair {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    padding: 2%;
+}
+
+.container-img-text {
+    text-align: center;
+    padding: 2%;
+}
+
+.Chica-img {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: auto;   
+}
