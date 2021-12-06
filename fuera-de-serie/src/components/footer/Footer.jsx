@@ -69,7 +69,7 @@ const Footer = () => {
               href="https://github.com/FUERA-DE-SERIE" 
               target="_blank" 
               rel="noreferrer"
-            >Repositorio en GitHub Fuera de Serie Equipo 8</a>
+            >Repositorio en GitHub Fuera de Serie Equipo 7</a>
           </p>
           <p className="col-dr fontCalibri-2">
             Desarrollado por Fuera de Serie 2021 &copy;

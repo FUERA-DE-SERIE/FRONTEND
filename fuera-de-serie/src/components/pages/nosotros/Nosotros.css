@@ -1,0 +1,20 @@
+.fontPlayfair {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    padding: 2%;
+}
+
+.container-img-text {
+    text-align: center;
+    padding: 2%;
+}
+
+.Chica-img {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: auto;   
+}
