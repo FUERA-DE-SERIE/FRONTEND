@@ -37,16 +37,18 @@
 }
 
 
-.fontPlayfair {
+
+
+.nombresPersonas {
     text-align: center;
 }
 
-.container {
+.container-2 {
     display: flex;
     padding: 2%;
 }
 
-.container-img-text {
+.container-img-text-2 {
     text-align: center;
     padding: 2%;
 }

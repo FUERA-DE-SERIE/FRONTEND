@@ -10,11 +10,11 @@ import SectionImage from './nosotrosSections/sectionImage';
 
 const NosotrosPage = () => {
   return (
-    <div className="probar">
+    <div className="">
       <div className="section margenes">
         <div className="col">
           <div>
-            <h1 className="fontPlayfair">Acerca 1 de Nombre</h1>
+            <h1 className="fontPlayfair-h3">Acerca 1 de Nombre</h1>
             <p className="fontCalibri margenCard">Este es un texto cualquirea. Luego debo algo diferente hskdu�sd lf
               ijhsdk�hsdkf fghfgh fghf f fghfgh fghfghf. Este es un texto cualquirea.
               Luego debo algo diferente. dfg dfg df este tambien es un componenete.
@@ -26,7 +26,7 @@ const NosotrosPage = () => {
               Luego debo algo diferente. dfg dfg df este tambien es un componenete.
               Luego debo algo diferente. dfg dfg df este tambien es un componenete.</p>
 
-            <h1 className="fontPlayfair">Cotacto</h1>
+            <h1 className="fontPlayfair">Contacto</h1>
             <p className="fontCalibri">Para preguntas por favor contacta.</p>
             <p className="fontCalibri">Email: contacto@nombre.com</p>
             <p className="fontCalibri">Telefono: 3124363888</p>
@@ -68,12 +68,12 @@ const NosotrosPage = () => {
             <CardImagePrincipal direccion='izquierda' imagen='Pan-Mantequilla.jpg' />
           </div>
           <div className="margenText">
-            <h3>Vive la experiencia</h3>
+            <p className="fontCalibri">Vive la experiencia</p>
             <h1 className="fontPlayfair">Apoyando el medio ambiente</h1>
-            <p>Este es un texto cualquirea. Luego debo algo diferente
+            <p className="fontCalibri-2">Este es un texto cualquirea. Luego debo algo diferente
               hskdu�sd lf ijhsdk�hsdkf fghfgh fghf f fghfgh fghfghf.
               Este es un texto cualquirea. Luego debo algo diferente</p>
-            <p>Este es un texto cualquirea. Luego debo algo diferente
+            <p className="fontCalibri-2">Este es un texto cualquirea. Luego debo algo diferente
               hskdu�sd lf ijhsdk�hsdkf fghfgh fghf f fghfgh fghfghf.
               Este es un texto cualquirea. Luego debo algo diferente</p>
             <Button1 buttonName='Suscribirse' type='submit' />
@@ -82,26 +82,26 @@ const NosotrosPage = () => {
       </div>
 
       <div>
-        <h2 className='fontPlayfair'>Nuestro Equipo</h2>
+        <h2 className='fontPlayfair nombresPersonas'>Nuestro Equipo</h2>
 
-        <div className="container">
-          <div className="container-img-text">
+        <div className="container-2">
+          <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
             <p>David Fonseca</p>
           </div>
-          <div className="container-img-text">
+          <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
             <p>Didier Llanten</p>
           </div>
-          <div className="container-img-text">
+          <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
             <p>Daniel Ayala</p>
           </div>
-          <div className="container-img-text">
+          <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
             <p>Alejandra Yaima</p>
           </div>
-          <div className="container-img-text">
+          <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
             <p>Jimmy Bohorques</p>
           </div>
