@@ -1,8 +1,78 @@
-import React from 'react'
-import Button1 from '../../../buttons/Button1'
+import React, { useState, useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router'
+import axios from 'axios'
+import { AuthContext } from '../../../../auth/authContext'
+import { types } from '../../../../types/types'
+import { useForm } from '../../../../hooks/useForm'
+import Button1 from '../../../buttons/Button1'
 
-const SectionForm = ({ handleLogin }) => {
+const SectionForm = () => {
+
+  // const [correo, setCorreo] = useState('');
+  // const [password, setPassword] = useState('');
+
+  // const handleInputChangeCorreo = (e) => {
+  //   setCorreo(e.target.value);
+  // }
+
+  // const handleInputChangePassword = (e) => {
+  //   setPassword(e.target.value);
+  // }
+
+  // UseState para varias variables
+  const [ formValues, handleInputChange ] = useForm({
+    correo: '',
+    password: ''
+  });
+
+  const { correo, password } = formValues;
+
+  // Manejo de Login
+  const navigate = useNavigate()
+  const { user, dispatch } = useContext( AuthContext )
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    validate();
+    navigate('/admin/dashboard', {
+      replace: true
+    });
+  }
+
+  //validaremos correo y contraseña, si todo es correcto lo manda a la view Admin
+  const validate =  () => {
+    axios.post('http://localhost:5000/api/user/login',{
+        correo: correo,
+        password: password
+    })
+    .then(response =>{
+      console.log(response.data);
+      return response.data
+    })
+    .then(data => {
+        localStorage.setItem('token', data.tokenReturn);
+        // this.$router.push({name:'Admin'})
+        const action = {
+          type: types.login,
+          payload: { name: 'Didier Ll.' }
+        };
+        dispatch(action);
+        // const lastPath = localStorage.getItem('lastPath');
+    })
+    .catch( err =>{
+        let message = null;
+        console.log(err.response);
+        if ([404,401].includes(err.response.status)) {
+            message = "el correo o contraseña son incorrectas"
+            console.log(message)
+        }else{
+            message = "ocurrio un error interno, intenta de nuevo en uno minutos"
+            console.log(message)
+        }
+    })
+  }
+
   return (
     <div className="row login-section">
 
@@ -23,21 +93,28 @@ const SectionForm = ({ handleLogin }) => {
           >Crea una cuenta</NavLink>
         </p>          
 
-        <form className='form-email' action="">
+        <form className='form-email' onSubmit={ handleSubmit }>
           <input 
             type="email" 
             placeholder="Ingresa tu correo electronico"
-            className="fontCalibri-2 input-form-login"> 
+            className="fontCalibri-2 input-form-login"
+            name="correo"
+            value={ correo }
+            onChange={ handleInputChange }
+          > 
           </input>
           <input 
             type="password" 
             placeholder="Ingresa tu contrasena"
-            className="fontCalibri-2 input-form-login"> 
+            className="fontCalibri-2 input-form-login"
+            name="password"
+            value={ password }
+            onChange={ handleInputChange }
+          > 
           </input>
           <Button1
             buttonName='Suscribirse'
-            type='submit' 
-            onClick={ handleLogin }
+            type='submit'
           />     
         </form> 
 
