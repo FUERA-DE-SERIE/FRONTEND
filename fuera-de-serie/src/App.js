@@ -1,24 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, useReducer } from 'react'
+import { AuthContext } from './auth/authContext'
+import { authReducer } from './auth/authReducer'
+import axios from 'axios';
+import AppRouter from "./routers/AppRouter";
+
+
+const init = () => {
+  return JSON.parse(localStorage.getItem('user')) || { logged: false }
+}
 
 function App() {
+
+  const [user, dispatch] = useReducer( authReducer, {}, init)
+
+  useEffect(() => {
+
+    if (!user) {
+      return
+    }
+
+    localStorage.setItem('user', JSON.stringify(user))
+  }, [user])
+
+  const [dishes, setDishes] = useState([])
+
+  useEffect(() => {
+    listTasks()
+  }, [])
+
+  //List Task
+  const listTasks = () => {
+    axios
+      .get("http://localhost:5000/api/dish/list")
+      .then((res) => {
+        const data = res.data;
+        setDishes(data)
+        return data;
+      })
+      .catch((err) => {
+        console.log(err);
+        return err;
+    });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContext.Provider value={
+      {
+        user,
+        dispatch,
+        dishes
+      }
+    }>
+      <AppRouter/>
+    </AuthContext.Provider>
+
   );
 }
 

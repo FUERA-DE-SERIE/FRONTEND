@@ -1,0 +1,84 @@
+.fontPlayfair-h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 300%;
+    margin: 0px;
+    padding: 0px;
+    color: #39494f;
+}
+
+.fontPlayfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 240%;
+    margin: 0px;
+    padding: 0px;
+    color: #39494f;
+}
+
+.fontPlayfair-h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 180%;
+    margin: 0px;
+    padding: 0px;
+    color: #39494f;
+}
+
+.fontYasevaOne {
+    font-family: 'Yeseva Onev';
+    font-size: 36px;
+    color: #39494f;
+}
+
+.fontCalibri {
+    font-family: 'Calibri light', sans-serif;
+    font-size: 15px;
+    color: #70756f;
+    margin: 0px;
+}
+
+.fontCalibri-2 {
+    font-family: 'Calibri light', sans-serif;
+    font-size: 15px;
+    color: #39494f;
+    margin: 0px;
+}
+
+
+.fontCalibri-3 {
+    font-family: 'Calibri light', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0px;
+    opacity: 80%;
+}
+
+.fontCalibri-3:hover {
+    opacity: 100%;
+}
+
+.fontCalibri-title {
+    font-family: 'Calibri light', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.fontCalibri-4 {
+    font-family: 'Calibri light', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0px;
+    opacity: 60%;
+    padding-top: 8%;
+}
+
+.active {
+    font-weight: bold;
+    opacity: 100%;
+}
+
+ 

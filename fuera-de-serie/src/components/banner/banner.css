@@ -1,0 +1,50 @@
+.banner{ 
+    height: 560px;
+    width: 390px;
+}
+
+.banner-background{ 
+    background-color:#e4dccb;
+    height: 320px;
+    width: 320px;
+}
+
+.banner-body{
+    display: flex;
+    width: 350px;
+    position: relative;
+    top: 58px;
+    left: 40px;
+}
+
+.banner-p{
+    writing-mode: vertical-rl;
+}
+
+.banner-img{
+    height: 490px;
+}
+
+.banner2{ 
+    height: 560px;
+    width: 390px;
+}
+
+.banner2-background{ 
+    background-color:#e4dccb;
+    height: 320px;
+    width: 320px;
+    position: relative;
+    top: 140px;
+    left: 70px;
+}
+
+.banner2-body{
+    position: relative;
+    top: -140px;
+    left: -70px;
+}
+
+.banner2-img{
+    height: 490px;
+}

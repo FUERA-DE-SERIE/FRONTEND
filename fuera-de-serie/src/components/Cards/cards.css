@@ -1,0 +1,86 @@
+/* CSS CardImagePrincipal */
+.derecha {
+    display: flex;
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+
+.derecha-p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    margin-left: 5px;
+}
+
+.derecha-img {
+    height: 630px;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.izquierda-p {
+    margin: 0;
+    writing-mode: vertical-rl;
+    margin-right: 5px;
+}
+
+.izquierda-img {
+    height: 630px;
+}
+
+/* CSS Card */
+.card {
+    max-width: 370px;
+}
+
+.card-h1 {
+    max-width: 405px;
+}
+
+.card-right {
+    text-align: end;
+}
+
+.texto {
+    color: #39494f;
+    font-size: 16px !important;
+    margin-top: 20px !important;
+}
+
+.boton {
+    text-align: right; 
+}
+
+/* CSS CardImage */
+
+.card-image {
+    margin: 1%;
+}
+
+.small-img {
+    height: 305px;
+}
+
+.small-body {
+    justify-content: center;
+}
+
+.medium-img {
+    height: 370px;
+}
+
+.medium-body {
+    text-align: center;
+}
+
+.large-img{
+    height: 405px;
+}
+
+.mt-20{
+    margin-top: 40px;    
+}
+

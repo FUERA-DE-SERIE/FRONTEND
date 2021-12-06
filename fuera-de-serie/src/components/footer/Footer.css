@@ -1,0 +1,43 @@
+.container {   
+    text-align: center;
+    padding: 80px;  
+}
+
+.container-1 {
+    background-color: #e4dccb;    
+}
+
+.section-footer {
+    padding-bottom: 60px;
+}
+
+.form-email {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.input-form { 
+    border: 0px solid;
+    padding: 17px 30px;
+    width: 40%;
+    margin-right: 15px !important;
+    outline: none; 
+}
+
+.input-form:focus {
+    outline: 0.5px solid;
+    outline-color: #70756f; 
+}
+
+.links-list {
+    list-style: none;
+    text-align: start;
+}
+
+.links-title {
+    margin-bottom: 15px !important;
+}
+
+.link-item {
+    padding-top: 10px;
+}
