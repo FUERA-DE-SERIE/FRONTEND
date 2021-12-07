@@ -1,15 +1,15 @@
-import React, { useContext } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux';
 import { Navigate, useLocation } from 'react-router-dom';
-import { AuthContext } from '../auth/authContext'
 
 const PublicRouter = ({ children }) => {
   
-  const { user } = useContext( AuthContext );
+  const { uid } = useSelector(state => state.auth)
 
   const { pathname } = useLocation();
 
-  return user.logged && pathname === '/login'
-    ? <Navigate to='/'/>
+  return uid && (pathname === '/auth/login' || pathname === '/auth/create-account')
+    ? <Navigate to='/admin/dashboard'/>
     : children
 }
 

@@ -76,6 +76,14 @@
     padding-top: 8%;
 }
 
+.fontCalibri-5 {
+    font-family: 'Calibri light', sans-serif;
+    font-size: 20px;
+    color: #70756f;
+    margin: 0px;
+    margin-top: 15px;
+}
+
 .active {
     font-weight: bold;
     opacity: 100%;

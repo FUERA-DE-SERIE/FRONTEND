@@ -1,11 +1,17 @@
-import React, { useContext } from 'react'
-import { AuthContext } from '../../../auth/authContext'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { getArticulosCategorias } from '../../../actions/tienda';
 import CardImage from '../../Cards/CardImage'
 import './storePage.css'
 
 const StorePage = () => {
 
-  const { dishes } = useContext( AuthContext )
+    const dispatch = useDispatch()
+    const { articulos } = useSelector(state => state.tienda)
+
+    useEffect(() => {
+      dispatch( getArticulosCategorias() )
+    }, [dispatch])
 
   return (
     <div className="section-store">
@@ -15,7 +21,7 @@ const StorePage = () => {
       </div>
       <div className="section">
         {
-          dishes.map((dish) => {
+          articulos.map((dish) => {
             return (
               <CardImage size='medium' key={ dish._id }  { ...dish }></CardImage>
             )
@@ -24,7 +30,7 @@ const StorePage = () => {
       </div>
       <div className="section">
         {
-          dishes.map((dish) => {
+          articulos.map((dish) => {
             return (
               <CardImage size='medium' key={ dish._id }  { ...dish }></CardImage>
             )
@@ -33,7 +39,7 @@ const StorePage = () => {
       </div>
       <div className="section">
         {
-          dishes.map((dish) => {
+          articulos.map((dish) => {
             return (
               <CardImage size='medium' key={ dish._id }  { ...dish }></CardImage>
             )

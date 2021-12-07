@@ -30,21 +30,21 @@ const NosotrosPage = () => {
         <div className="col">
           <div className="">
             <div>
-              <SectionImage size='medium' plato='Pizza-Plating'></SectionImage>
+              <SectionImage size='small' plato='Platos'></SectionImage>
             </div>
 
             <div className="">
-              <SectionImage className="" size='medium' plato='Pizza-Plating'></SectionImage>
+              <SectionImage className="" size='small' plato='Pizza-plating'></SectionImage>
             </div>
           </div>
 
           <div className="mt-20">
             <div className="margenImg">
-              <SectionImage size='medium' plato='Pizza-Plating'></SectionImage>
+              <SectionImage size='small' plato='Frutas'></SectionImage>
             </div>
 
             <div className="margenImg">
-              <SectionImage className="" size='medium' plato='Pizza-Plating'></SectionImage>
+              <SectionImage className="" size='small' plato='Risotto'></SectionImage>
             </div>
           </div>
         </div>
@@ -77,23 +77,23 @@ const NosotrosPage = () => {
         <div className="container-2">
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p className="fontPlayfair-h3">David Fonseca</p>
+            <p className="fontCalibri-5">David Fonseca</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p className="fontPlayfair-h3">Didier Llanten</p>
+            <p className="fontCalibri-5">Didier Llanten</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p className="fontPlayfair-h3">Daniel Ayala</p>
+            <p className="fontCalibri-5">Daniel Ayala</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p className="fontPlayfair-h3">Alejandra Yaima</p>
+            <p className="fontCalibri-5">Alejandra Yaima</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p className="fontPlayfair-h3">Jimmy Bohorques</p>
+            <p className="fontCalibri-5">Jimmy Bohorques</p>
           </div>
         </div>
       </div>

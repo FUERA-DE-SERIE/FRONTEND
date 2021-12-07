@@ -6,15 +6,26 @@
 .login-section{
   background-color:#f7f6f5;
   min-height: 625px;  
+  height: 100vh;
 }
 
 .login {
   padding: 12%;
 }
 
+.register {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
 .crear-cuenta {
   font-weight: bold;
   margin-left: 5px !important;
+}
+
+.form-email {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .input-form-login {
@@ -34,11 +45,15 @@
   font-weight: bold;
 }
 
+.ya-tienes-cuenta {
+  margin-bottom: 1rem !important;
+}
+
 /* CSS Video Section */
 .video-section{
   background-color:#e4dccb;
   min-height: 625px;
-  text-align: center;
+  height: 100vh;
 }
 
 .video-section-body {

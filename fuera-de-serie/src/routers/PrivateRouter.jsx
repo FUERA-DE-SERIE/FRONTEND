@@ -1,14 +1,14 @@
-import React, { useContext } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
-import { AuthContext } from '../auth/authContext'
 
 const PrivateRouter = ({ children }) => {
   
-  const { user } = useContext( AuthContext);
+  const { uid } = useSelector(state => state.auth)
 
-  return user.logged
+  return uid
     ? children
-    : <Navigate to='/login'/>
+    : <Navigate to='/auth/login'/>
 }
 
 export default PrivateRouter

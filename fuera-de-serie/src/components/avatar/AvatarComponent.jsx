@@ -1,12 +1,15 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Avatar from '@mui/material/Avatar';
 import MenuItem from '@mui/material/MenuItem';
 
-const AvatarComponent = ({handleLogout, user}) => {
+const AvatarComponent = ({handleLogout}) => {
 
+  const { name } = useSelector(state => state.auth)
+  
   const settings = ['Logout'];
 
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -23,10 +26,10 @@ const AvatarComponent = ({handleLogout, user}) => {
     <>
 
       <div className="avatar-name-user">
-        <p className="fontCalibri-2 user-name">{user.name}</p>
+        <p className="fontCalibri-2 user-name">{name}</p>
         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
           <Avatar 
-            alt={user.name} 
+            alt={name} 
             src={`/assets/avatars/undraw_profile_2.svg`}
             sx={{ width: 33, height: 33 }} 
           />

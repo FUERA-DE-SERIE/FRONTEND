@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom'
-import { AuthContext } from '../auth/authContext'
-import { types } from '../types/types'
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Routes, Route } from "react-router-dom";
+import { startLogout } from '../actions/auth';
 import Sidebar from '../components/pages/dashboard/dashboardSections/Sidebar';
 import DashboardPage from '../components/pages/dashboard/DashboardPage';
 import DishesPage from '../components/pages/dashboard/DishesPage';
@@ -16,29 +15,20 @@ import '../components/pages/dashboard/dashboardPage.css'
 const DashBoardRouter = () => {
 
   // handeling logout
-  const { pathname, search } = useLocation();
-  const { user, dispatch } = useContext( AuthContext )
-  const navigate = useNavigate()
+  const { name } = useSelector(state => state.auth)
+  const dispatch = useDispatch()
 
   const handleLogout = () => {
-    
-    const action = {
-      type: types.logout,
-      payload: { lastPath: pathname + search }
-    }
 
-    dispatch(action);
+    dispatch( startLogout() );
 
-    navigate('/', {
-      replace: true
-    });
   }
 
   return (
     <div className="section-up">
       <Sidebar handleLogout={handleLogout}/>
       <div className="row dashboard">
-        <HeaderDashboard handleLogout={handleLogout} user={user}/>
+        <HeaderDashboard handleLogout={handleLogout} user={name}/>
         <Routes>
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/categorias" element={<CategoriasPage />} />

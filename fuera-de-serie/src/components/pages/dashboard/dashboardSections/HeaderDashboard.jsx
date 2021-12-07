@@ -3,7 +3,7 @@ import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import AvatarComponent from '../../../avatar/AvatarComponent'
 
 
-export default function HeaderDashboard({handleLogout, user}) {
+export default function HeaderDashboard({handleLogout}) {
 
 
   return (
@@ -19,7 +19,7 @@ export default function HeaderDashboard({handleLogout, user}) {
 
         {/* <!-- Topbar Search --> */}
         <div className="col-dr">
-          <AvatarComponent handleLogout={handleLogout} user={user}/>
+          <AvatarComponent handleLogout={handleLogout}/>
         </div>
 
     </nav>

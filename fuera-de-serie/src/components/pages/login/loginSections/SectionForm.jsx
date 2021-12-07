@@ -1,13 +1,18 @@
-import React, { useContext } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { useNavigate } from 'react-router'
+// import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+// import { useNavigate } from 'react-router'
+import GoogleButton from 'react-google-button'
+import { useDispatch, useSelector } from 'react-redux'
 // import axios from 'axios'
-import { AuthContext } from '../../../../auth/authContext'
-import { types } from '../../../../types/types'
 import { useForm } from '../../../../hooks/useForm'
+import { startGoogleLogin, startLoginWithEmailPassword } from '../../../../actions/auth'
 import Button1 from '../../../buttons/Button1'
 
 const SectionForm = () => {
+
+  // const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const { loading } = useSelector(state => state.ui)
 
   // Manejo de Form
   const [ formValues, handleInputChange ] = useForm({
@@ -17,26 +22,19 @@ const SectionForm = () => {
 
   const { correo, password } = formValues;
 
-  // Manejo de Login
-  const navigate = useNavigate()
-  const { user, dispatch } = useContext( AuthContext )
-
-  const handleLogin = (e) => {
-
-    e.preventDefault();
-    const action = {
-      type: types.login,
-      payload: { name: 'David Fonseca' }
-    };
-    
-    dispatch(action);
-
-    navigate(user.lastPath, {
-      replace: true
-    });
+  // Manejo de Logins
+  const handleGoogleLogin = () => {
+    // console.log('Google Login');
+    dispatch( startGoogleLogin() );
   }
 
-  //validaremos correo y contraseña, si todo es correcto lo manda a la view Admin
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // dispatch(login('jh34g5j34hg53', 'David Fonseca'));
+    dispatch( startLoginWithEmailPassword(correo, password) );
+  }
+
+  // // validaremos correo y contraseña, si todo es correcto lo manda a la view Admin
   // const validate =  () => {
   //   axios.post('http://localhost:5000/api/user/login',{
   //       correo: correo,
@@ -77,10 +75,10 @@ const SectionForm = () => {
 
         <h3 className="fontPlayfair-h3">Log in</h3>
         <p className="fontCalibri">No tienes una cuenta?  
-          <NavLink 
+          <Link 
             className='crear-cuenta fontCalibri'
-            to="/create-account"
-          >Crea una cuenta</NavLink>
+            to="/auth/create-account"
+          >Crea una cuenta</Link>
         </p>          
 
         <form className='form-email' onSubmit={ handleLogin }>
@@ -91,6 +89,7 @@ const SectionForm = () => {
             name="correo"
             value={ correo }
             onChange={ handleInputChange }
+            required
           > 
           </input>
           <input 
@@ -100,19 +99,26 @@ const SectionForm = () => {
             name="password"
             value={ password }
             onChange={ handleInputChange }
+            required
           > 
           </input>
           <Button1
-            buttonName='Suscribirse'
+            buttonName='Login con email y password'
             type='submit'
+            disabled={ loading }
           />     
-        </form> 
+        </form>
+
+        <GoogleButton
+          onClick={ handleGoogleLogin }
+          type='light'
+        /> 
 
         <p>
-          <NavLink 
+          <Link 
             className='olvido-cuenta fontCalibri'
             to="/password-forgot"
-          >Olvidaste tu contrasena?</NavLink>
+          >Olvidaste tu contrasena?</Link>
         </p>
        
       </div>

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import './buttons.css'
 
-const Button1 = ( { buttonName, type, onClick } ) => {
+const Button1 = ( { buttonName, type, onClick, disabled } ) => {
 
   return (
     <>
@@ -9,6 +9,7 @@ const Button1 = ( { buttonName, type, onClick } ) => {
       className="button1 fontCalibri" 
       type={ type }
       onClick={ onClick }
+      disabled={ disabled }
       > { buttonName } </button>
     </>
   )

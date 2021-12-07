@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { AuthContext } from '../../auth/authContext'
+import { useSelector } from 'react-redux';
 // import AvatarComponent from '../avatar/AvatarComponent'
 import './header.css'
 
 const Header = () => {
 
-  const { user } = useContext( AuthContext );
+  const { name } = useSelector(state => state.auth)
 
   return (
     <header className="header">
@@ -32,14 +32,14 @@ const Header = () => {
             className={ ({ isActive }) => 'fontCalibri-2 ' + (isActive ? 'active' : '')} 
             to="/store"
           >MENU</NavLink>
-          { user.logged 
+          { name 
             ? <NavLink 
                 className={ ({ isActive }) => 'fontCalibri-2 ' + (isActive ? 'active' : '')} 
                 to="/admin/dashboard"
-              >{user.name}</NavLink> 
+              >{ name }</NavLink> 
             : <NavLink 
                 className={ ({ isActive }) => 'fontCalibri-2 ' + (isActive ? 'active' : '')} 
-                to="/login"
+                to="/auth/login"
               >LOGIN</NavLink>
           }
         </div>
