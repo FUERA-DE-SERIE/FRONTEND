@@ -55,7 +55,7 @@ const SectionForm = () => {
         // this.$router.push({name:'Admin'})
         const action = {
           type: types.login,
-          payload: { name: 'Didier Ll.' }
+          payload: { name: 'David Fonseca' }
         };
         dispatch(action);
         // const lastPath = localStorage.getItem('lastPath');

@@ -14,17 +14,11 @@ const NosotrosPage = () => {
       <div className="section margenes">
         <div className="col">
           <div>
-            <h1 className="fontPlayfair-h3">Acerca 1 de Nombre</h1>
-            <p className="fontCalibri margenCard">Este es un texto cualquirea. Luego debo algo diferente hskdu�sd lf
-              ijhsdk�hsdkf fghfgh fghf f fghfgh fghfghf. Este es un texto cualquirea.
-              Luego debo algo diferente. dfg dfg df este tambien es un componenete.
-              Luego debo algo diferente. dfg dfg df este tambien es un componenete.</p>
+            <h1 className="fontPlayfair-h3">Acerca de EVER</h1>
+            <p className="fontCalibri margenCard">Este es un texto cualquirea. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-            <h1 className="fontPlayfair-h3">Acerca de Nombre</h1>
-            <p className="fontCalibri margenCard">Este es un texto cualquirea. Luego debo algo diferente hskdu�sd lf
-              ijhsdk�hsdkf fghfgh fghf f fghfgh fghfghf. Este es un texto cualquirea.
-              Luego debo algo diferente. dfg dfg df este tambien es un componenete.
-              Luego debo algo diferente. dfg dfg df este tambien es un componenete.</p>
+            <h1 className="fontPlayfair-h3">Nuestros Valores</h1>
+            <p className="fontCalibri margenCard">Este es un texto cualquirea. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur..</p>
 
             <h1 className="fontPlayfair">Contacto</h1>
             <p className="fontCalibri">Para preguntas por favor contacta.</p>
@@ -70,40 +64,36 @@ const NosotrosPage = () => {
           <div className="margenText">
             <p className="fontCalibri">Vive la experiencia</p>
             <h1 className="fontPlayfair">Apoyando el medio ambiente</h1>
-            <p className="fontCalibri-2">Este es un texto cualquirea. Luego debo algo diferente
-              hskdu�sd lf ijhsdk�hsdkf fghfgh fghf f fghfgh fghfghf.
-              Este es un texto cualquirea. Luego debo algo diferente</p>
-            <p className="fontCalibri-2">Este es un texto cualquirea. Luego debo algo diferente
-              hskdu�sd lf ijhsdk�hsdkf fghfgh fghf f fghfgh fghfghf.
-              Este es un texto cualquirea. Luego debo algo diferente</p>
+            <p className="fontCalibri-2">Este es un texto cualquirea. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p className="fontCalibri-2 para-dos-nosotros">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <Button1 buttonName='Suscribirse' type='submit' />
           </div>
         </div>
       </div>
 
-      <div>
+      <div className="container-nosotros-personas">
         <h2 className='fontPlayfair nombresPersonas'>Nuestro Equipo</h2>
 
         <div className="container-2">
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p>David Fonseca</p>
+            <p className="fontPlayfair-h3">David Fonseca</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p>Didier Llanten</p>
+            <p className="fontPlayfair-h3">Didier Llanten</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p>Daniel Ayala</p>
+            <p className="fontPlayfair-h3">Daniel Ayala</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p>Alejandra Yaima</p>
+            <p className="fontPlayfair-h3">Alejandra Yaima</p>
           </div>
           <div className="container-img-text-2">
             <img className={`Chica-img`} src={`/assets/Chica.jpg`} alt="" />
-            <p>Jimmy Bohorques</p>
+            <p className="fontPlayfair-h3">Jimmy Bohorques</p>
           </div>
         </div>
       </div>

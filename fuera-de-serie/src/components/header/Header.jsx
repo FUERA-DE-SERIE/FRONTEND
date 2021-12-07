@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext'
+import AvatarComponent from '../avatar/AvatarComponent'
 import './header.css'
 
 const Header = () => {
@@ -35,7 +36,7 @@ const Header = () => {
             ? <NavLink 
                 className={ ({ isActive }) => 'fontCalibri-2 ' + (isActive ? 'active' : '')} 
                 to="/admin/dashboard"
-              >{ user.name }</NavLink> 
+              >{user.name}</NavLink> 
             : <NavLink 
                 className={ ({ isActive }) => 'fontCalibri-2 ' + (isActive ? 'active' : '')} 
                 to="/login"
