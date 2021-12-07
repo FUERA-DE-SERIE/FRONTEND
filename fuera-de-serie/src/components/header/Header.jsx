@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext'
-import AvatarComponent from '../avatar/AvatarComponent'
+// import AvatarComponent from '../avatar/AvatarComponent'
 import './header.css'
 
 const Header = () => {

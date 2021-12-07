@@ -11,7 +11,7 @@ const StorePage = () => {
     <div className="section-store">
       <div className="section section-store">
 
-        <h1 className="fontPlayfair">Store Page</h1>
+        <h1 className="fontPlayfair">Tienda</h1>
       </div>
       <div className="section">
         {

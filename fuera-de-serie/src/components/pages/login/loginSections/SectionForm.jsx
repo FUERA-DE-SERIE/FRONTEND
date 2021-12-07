@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router'
-import axios from 'axios'
+// import axios from 'axios'
 import { AuthContext } from '../../../../auth/authContext'
 import { types } from '../../../../types/types'
 import { useForm } from '../../../../hooks/useForm'
@@ -9,18 +9,7 @@ import Button1 from '../../../buttons/Button1'
 
 const SectionForm = () => {
 
-  // const [correo, setCorreo] = useState('');
-  // const [password, setPassword] = useState('');
-
-  // const handleInputChangeCorreo = (e) => {
-  //   setCorreo(e.target.value);
-  // }
-
-  // const handleInputChangePassword = (e) => {
-  //   setPassword(e.target.value);
-  // }
-
-  // UseState para varias variables
+  // Manejo de Form
   const [ formValues, handleInputChange ] = useForm({
     correo: '',
     password: ''
@@ -32,46 +21,47 @@ const SectionForm = () => {
   const navigate = useNavigate()
   const { user, dispatch } = useContext( AuthContext )
 
-  const handleSubmit = (e) => {
+  const handleLogin = (e) => {
+
     e.preventDefault();
-    validate();
-    navigate('/admin/dashboard', {
+    const action = {
+      type: types.login,
+      payload: { name: 'David Fonseca' }
+    };
+    
+    dispatch(action);
+
+    navigate(user.lastPath, {
       replace: true
     });
   }
 
   //validaremos correo y contraseña, si todo es correcto lo manda a la view Admin
-  const validate =  () => {
-    axios.post('http://localhost:5000/api/user/login',{
-        correo: correo,
-        password: password
-    })
-    .then(response =>{
-      console.log(response.data);
-      return response.data
-    })
-    .then(data => {
-        localStorage.setItem('token', data.tokenReturn);
-        // this.$router.push({name:'Admin'})
-        const action = {
-          type: types.login,
-          payload: { name: 'David Fonseca' }
-        };
-        dispatch(action);
-        // const lastPath = localStorage.getItem('lastPath');
-    })
-    .catch( err =>{
-        let message = null;
-        console.log(err.response);
-        if ([404,401].includes(err.response.status)) {
-            message = "el correo o contraseña son incorrectas"
-            console.log(message)
-        }else{
-            message = "ocurrio un error interno, intenta de nuevo en uno minutos"
-            console.log(message)
-        }
-    })
-  }
+  // const validate =  () => {
+  //   axios.post('http://localhost:5000/api/user/login',{
+  //       correo: correo,
+  //       password: password
+  //   })
+  //   .then(response =>{
+  //     console.log(response.data);
+  //     return response.data
+  //   })
+  //   .then(data => {
+  //       localStorage.setItem('token', data.tokenReturn);
+  //       // this.$router.push({name:'Admin'})
+  //   })
+  //   .catch( err =>{
+  //       let message = null;
+  //       console.log(err.response);
+  //       if ([404,401].includes(err.response.status)) {
+  //           message = "el correo o contraseña son incorrectas"
+  //           console.log(message)
+  //       }else{
+  //           message = "ocurrio un error interno, intenta de nuevo en uno minutos"
+  //           console.log(message)
+  //       }
+  //   })
+  // }
 
   return (
     <div className="row login-section">
@@ -93,7 +83,7 @@ const SectionForm = () => {
           >Crea una cuenta</NavLink>
         </p>          
 
-        <form className='form-email' onSubmit={ handleSubmit }>
+        <form className='form-email' onSubmit={ handleLogin }>
           <input 
             type="email" 
             placeholder="Ingresa tu correo electronico"

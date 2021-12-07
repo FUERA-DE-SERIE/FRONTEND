@@ -6,7 +6,7 @@ import AppRouter from "./routers/AppRouter";
 
 
 const init = () => {
-  return JSON.parse(localStorage.getItem('user')) || { logged: false }
+  return JSON.parse(localStorage.getItem('user')) || { logged: false, lastPath: '/' }
 }
 
 function App() {
@@ -24,10 +24,6 @@ function App() {
 
   const [dishes, setDishes] = useState([])
 
-  useEffect(() => {
-    listTasks()
-  }, [])
-
   //List Task
   const listTasks = () => {
     axios
@@ -42,6 +38,8 @@ function App() {
         return err;
     });
   }
+
+  listTasks()
 
   return (
     <AuthContext.Provider value={
