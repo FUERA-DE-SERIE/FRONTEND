@@ -2,7 +2,7 @@
 
 ## MERN Stack - Web application.
 
-Final project for term 4 (Final Term) of MinTic Colombia 2022. Simple web app using MERN stack, implmenting Redux store.
+Final project for term 4 (Final Term) of MinTic Colombia 2022. Simple web app using MERN stack, implementing Redux store.
 
 Repositorio del equipo 1, grupo 61 UTP, relacionado con el ciclo 4; desarrollo de software, patrocinado por MinTic Colombia 2022.
 
